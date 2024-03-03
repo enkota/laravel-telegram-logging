@@ -57,7 +57,7 @@ class TelegramLoggerHandler extends AbstractProcessingHandler
      * @param array $record
      * @return void
      */
-    protected function write(array $record): void
+    protected function write($record): void
     {
         $this->telegramService->sendMessage($this->formatLogText($record));
     }
@@ -68,7 +68,7 @@ class TelegramLoggerHandler extends AbstractProcessingHandler
      * @var array $log
      * @return string
      */
-    protected function formatLogText(array $log): string
+    protected function formatLogText($log): string
     {
         $logText = '<b>Application:</b> ' . $this->applicationName . PHP_EOL;
         $logText .= '<b>Environment:</b> ' . $this->applicationEnvironment . PHP_EOL;
