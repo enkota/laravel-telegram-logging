@@ -3,9 +3,9 @@
   "description": "Send Laravel logs to a Telegram chat via Telegram Bot.",
   "homepage": "https://github.com/rafaellaurindo/laravel-telegram-logging",
   "require": {
-    "php": ">=8.2",
+    "php": "^8.1",
     "laravel/framework": "^10.10",
-    "monolog/monolog": "2.* || 3.*"
+    "monolog/monolog": "3.*"
   },
   "license": "MIT",
   "authors": [
